@@ -19,7 +19,6 @@ var lifes : Text;
 
 function awake(){
     //get the text at the begining of the game
-    countText = GetComponent (Text);
     lifes = GetComponent(Text);
     Debug.Log(text);
 }
@@ -38,8 +37,6 @@ function FixedUpdate () {
                 Debug.Log("tocamos una bomba");
             }else{
                 //give u one point if u hit a no bomb
-                count = count + 1;
-                countText = GetComponent (Text);
             scoreAtTime = scoreAtTime + 1;
             text.text = scoreAtTime.ToString();
             Debug.Log("tocamos un dulce");
